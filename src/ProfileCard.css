@@ -1,0 +1,45 @@
+.profile-card {
+  background: var(--card-bg, #fff);
+  color: var(--card-text, #222);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  margin: 1rem;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background 0.3s, color 0.3s;
+}
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.profile-name {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+.profile-bio {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.profile-follow-btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  transition: background 0.2s;
+}
+.profile-follow-btn.unfollow {
+  background: #e74c3c;
+}
+.profile-follow-btn.follow {
+  background: #007bff;
+}
